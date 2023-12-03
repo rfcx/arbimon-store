@@ -34,3 +34,17 @@ Typical usage:
     ```
 
 4. Enjoy testing your app
+
+
+
+## Use the AWS CLI
+
+_Requires AWS CLI to be installed._
+
+### Examples
+
+To download an object to your local machine:
+
+```
+aws s3api get-object --bucket legacy-bucket --key project_1907/soundscapes/5852/image.png --endpoint-url=http://localhost:9090 5852-image.png
+```

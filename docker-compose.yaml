@@ -2,6 +2,9 @@ version: "3.8"
 services:
   s3mock:
     image: adobe/s3mock:3.1.0
+    ports:
+      - "9090:9090"
+      - "9091:9091"
     environment:
       - initialBuckets=core-bucket,legacy-bucket
       - retainFilesOnExit=true
